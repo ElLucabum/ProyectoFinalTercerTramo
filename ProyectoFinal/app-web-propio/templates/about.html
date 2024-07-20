@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="SEC-CURSOS">
+
+  <div class="TituloCursos">
+    <h1>- Cursos de EDA -</h1>
+  </div>
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">   
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+     <div class="container">
+         <div class="card-deck" id="card-deck">  </div>
+     </div>
+	
+<script>
+
+  function obtenerDatos () {
+    fetch('https://cursosapi-default-rtdb.firebaseio.com/cursos.json')
+	
+	 .then(response => response.json())
+	 .then(data => {
+	 
+	 const cardDeck = document.getElementById('card-deck'); 
+	 cardDeck.innerHTML = '';
+	 
+	 for (let key in data) {     
+	   const objeto = data[key];
+	   
+	     
+	   const card = document.createElement('div');  
+	   card.classList.add('card');
+	   
+	   const imagen = document.createElement('img');
+	   imagen.classList.add('card-img-top');
+	   imagen.src = objeto.imagen;
+	   
+	   const cardBody = document.createElement('div'); 
+	   cardBody.classList.add('card-body');
+	   
+	   const Name = document.createElement('h5');
+	   Name.classList.add ('Card-name');
+	   Name.textContent = objeto.nombrecurso;
+	   
+       const Duracion = document.createElement('p');
+       Duracion.classList.add('card-text');
+       Duracion.textContent = 'Duracion: ' + objeto.duracion;
+
+       const Precio = document.createElement('p');
+       Precio.classList.add('card-text');
+       Precio.textContent = 'Precio: $' + objeto.valor;	   
+
+
+       cardBody.appendChild(Name);
+       cardBody.appendChild(Duracion);	
+       cardBody.appendChild(Precio);	   
+
+	   card.appendChild(imagen);
+	   card.appendChild(cardBody);
+	   
+	   cardDeck.appendChild(card); 
+	   
+	 }
+	 });
+  
+  }
+  
+     obtenerDatos();
+	 
+	 setInterval(obtenerDatos, 5000);
+	 
+	 
+	 
+      </script>	
+	 
+    </body>
+   
+  </html>
+  
+</div>
+  
+{% endblock%}

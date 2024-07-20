@@ -1,0 +1,171 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="IntroBKG">
+
+   <h1 class="IntroContent">
+    Aprende de la Mejor Manera Con EDA
+   </h1>
+   
+   <div class="ButtonRegister">
+     <a href="https://ellucabum.github.io/Login-Register-aathing/SubPaginas/register.html">
+     <h3 class="Font4"> Registrese ahora </h3>
+	 </a>
+   </div>
+   
+   <img src="../static/Img/TipoWea.png" class="IntroIMG">
+
+</div>
+
+
+<div class="PromoHeader">
+   <h3 class="Font2"> Promocionado por: </h3>
+</div>
+
+
+<div class="Promocion">
+   <div class="PotreroBOX">
+   <img src="../static/Img/POTRERO.png" class="PotreroIMG" >
+   </div>
+</div>
+
+
+<div class="ApiCards">
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">   
+  <meta charset="UTF-8">
+</head>
+
+<body>
+ 
+     <div class="container">
+         <div class="card-deck" id="card-deck">  </div>
+     </div>
+	
+<script>
+
+  function obtenerDatos () {
+    fetch('https://cursosapi-default-rtdb.firebaseio.com/cursos.json')
+	
+	 .then(response => response.json())
+	 .then(data => {
+	 
+	 const cardDeck = document.getElementById('card-deck'); 
+	 cardDeck.innerHTML = '';
+	 
+	 for (let key in data) {     
+	   const objeto = data[key];
+	   
+	     
+	   const card = document.createElement('div');  
+	   card.classList.add('card');
+	   
+	   const imagen = document.createElement('img');
+	   imagen.classList.add('card-img-top');
+	   imagen.src = objeto.imagen;
+	   
+	   const cardBody = document.createElement('div'); 
+	   cardBody.classList.add('card-body');
+	   
+	   const Name = document.createElement('h5');
+	   Name.classList.add ('Card-name');
+	   Name.textContent = objeto.nombrecurso;
+	   
+       const Duracion = document.createElement('p');
+       Duracion.classList.add('card-text');
+       Duracion.textContent = 'Duracion: ' + objeto.duracion;
+
+       const Precio = document.createElement('p');
+       Precio.classList.add('card-text');
+       Precio.textContent = 'Precio: $' + objeto.valor;	   
+
+
+       cardBody.appendChild(Name);
+       cardBody.appendChild(Duracion);	
+       cardBody.appendChild(Precio);	   
+
+	   card.appendChild(imagen);
+	   card.appendChild(cardBody);
+	   
+	   cardDeck.appendChild(card); 
+	   
+	 }
+	 });
+  
+  }
+  
+     obtenerDatos();
+	 
+	 setInterval(obtenerDatos, 5000);
+	 
+	 
+	 
+      </script>	
+	 
+    </body>
+   
+  </html>
+
+</div>
+
+<div class="ButtonCursosBOX">
+   
+   <div class="ButtonMasCursos">
+      <a href="">
+       <h3 class="Font5"> Ver Mas Cursos</h3>
+	  </a>
+   </div>
+   
+</div>
+
+
+<div class="VentajasHeader">  
+   <h2 class="Font3"> Ventajas que ofrece EDA</h2>
+</div>
+
+<div class="VentajasBOX">
+
+<div class="RowBOX">
+  <div class="VText">
+    <h2 class="Font3"> Aprende a tu Ritmo</h2>
+	<p class="Font3"> Aprende desde la comodidad de su casa. sin horarios y a tu ritmo. Usted decide cuando seguir con cada unidad </p>
+  </div>
+  
+  <div class="VText">
+    <h2 class="Font3"> Aprende con Profecionales</h2>
+	<p class="Font3"> Aprende muchas de las profeciones mas utiles con los mejores profesores que ofrece la pagina </p>  
+  </div>
+  
+  <div class="VText">
+    <h2 class="Font3"> Contacta con los Profesores</h2>
+	<p class="Font3"> Ten contacto directo con los profesores para poder hablarles o preguntarles a serca de las actividades </p>  
+  </div>
+</div>
+
+<div class="RowBOX">
+  <div class="VText">
+    <h2 class="Font3"> Ten un Sertificado por cada curso</h2>
+	<p class="Font3"> Por cada vez que completes un curso contaras con un sertificado de estos  </p>  
+  </div>
+  
+  <div class="VText">
+    <h2 class="Font3"> Ponte Al Dia</h2>
+	<p class="Font3"> Puedes ver los videos grabados despues de la clase para no perderte ningun detalle de las actividades y ponerte al dia </p>  
+  </div>
+  
+  <div class="VText">
+    <h2 class="Font3"> Miles de cursos online</h2>
+	<p class="Font3"> EDA es una web muy nueva pero cada dia vamos añadiendo nuevos cursos para aprender y explorar </p>  
+  </div>
+</div>    
+  
+</div>
+  
+{% endblock%}
+
+
+

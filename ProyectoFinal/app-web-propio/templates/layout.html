@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+  <title>EDA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> 
+</head>
+
+<body>
+
+<div class="Contenedor1">
+
+    <div class="Titulo">
+    <h1 class="Font0"> EDA </h1>
+	<h5 class="Font2"> EDUCACION DIGITAL ACADEMICA </h5>
+	</div>
+
+  
+     <div class="SEC1">
+     <a href="{{ url_for('home') }}">
+      <h5 class="color1"> Home </h5>
+	 </a>
+	 </div>
+  
+     <div class="SEC2">
+     <a href="{{ url_for('about') }}">
+      <h5 class="color1"> Cursos</h5>
+	 </a>
+	 </div>
+	 
+	 <div class="EntrarButton">
+	 <a href="https://ellucabum.github.io/Login-Register-aathing/SubPaginas/login.html" target="_blank">
+	  <h5 class="Font4"> Entrar </h5>
+	 </a>
+	 </div>
+	 
+	 <div class="TrueRegisterButton">
+	 <a href="https://ellucabum.github.io/Login-Register-aathing/SubPaginas/register.html" target="_blank">
+	  <h5 class="Font4"> Registro </h5>
+	 </a>
+	 </div>	 
+	 
+</div>  
+
+{% block content %}
+
+
+  
+{% endblock%}
+
+<div class="Header1">
+ <h2>Cursos de EDA</h2>
+</div>
+
+<div class="BOX1">
+
+<div class="BoxContent">
+  <h4 class="Font3"> Categorias </h4>
+  
+  <h4 class="Font3"> Areas </h4>
+  
+  <h4 class="Font3"> Listas </h4> 
+</div>
+
+<div class="LinkContainer">
+
+  <div class="Categorias">
+     <a href=""> <p class="color2"> Categoria curso 1- </p> </a>
+     <a href=""> <p class="color2"> Categoria curso 2- </p> </a>
+     <a href=""> <p class="color2"> Categoria curso 3- </p> </a>
+     <a href=""> <p class="color2"> Categoria curso 4- </p> </a>
+     <a href=""> <p class="color2"> Categoria curso 5-</p> </a>
+     <a href=""> <p class="color2"> Categoria curso 6-</p> </a>	 
+  </div>
+  
+  <div class="Areas">
+     <a href=""> <p class="color2"> Area de curso 1- </p> </a>
+     <a href=""> <p class="color2"> Area de curso 2-  </p> </a>
+     <a href=""> <p class="color2"> Area de curso 3-  </p> </a>
+     <a href=""> <p class="color2"> Area de curso 4-  </p> </a>
+     <a href=""> <p class="color2"> Area de curso 5-  </p> </a>
+     <a href=""> <p class="color2"> Area de curso 6-  </p> </a>	 
+  </div> 
+
+  <div class="Listas">
+     <a href=""> <p class="color2"> Cursos nuevos- </p> </a>
+	 <a href=""> <p class="color2"> Cursos mejor valorados- </p> </a>
+     <a href=""> <p class="color2"> Cursos populares- </p> </a>
+     <a href=""> <p class="color2"> Cursos en promocion- </p> </a>		 
+  </div>  
+
+</div>
+ 
+</div>
+
+
+<div class="Footer">
+
+  <div class="FooterTitles">
+    <h4> Secciones </h4>
+	<h4> Informacion </h4>
+	<h4> Conecta </h4>
+  </div>
+  
+  <div class="LinkContainer2">
+  
+  <div class="Secciones">
+     <a href="{{ url_for('home') }}"> <p class="color3"> Home- </p> </a>
+	 <a href="{{ url_for('about') }}"> <p class="color3"> Cursos- </p> </a>
+     <a href=""> <p class="color3"> Seccion 3- </p> </a>
+     <a href=""> <p class="color3"> Seccion 4- </p> </a>		 
+  </div>
+
+  <div class="Info">
+     <a href=""> <p class="color3"> Aserca de nosotros- </p> </a>
+	 <a href=""> <p class="color3"> Informacion de la empresa- </p> </a>
+     <a href=""> <p class="color3"> Nuestra Historia- </p> </a>
+     <a href=""> <p class="color3"> Extras- </p> </a>		 
+  </div> 
+
+  <div class="Conecta">
+      
+  <div class="ButtonAnimation">
+     <a href="https://www.facebook.com" target="_blank"> <img src="../static/Img/facebook.png" class="ImgSize"> </a> 
+  </div>
+  
+  <div class="ButtonAnimation">
+     <a href="https://www.instagram.com" target="_blank"> <img src="../static/Img/instagram.png" class="ImgSize"> </a> 
+  </div>
+
+  <div class="ButtonAnimation">
+     <a href="https://twitter.com/" target="_blank"> <img src="../static/Img/twitter.png" class="ImgSize"> </a> 
+  </div>
+
+  <div class="ButtonAnimation">
+     <a href="https://www.youtube.com/" target="_blank"> <img src="../static/Img/youtube.png" class="ImgSize"> </a> 
+  </div>  
+
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+</html>

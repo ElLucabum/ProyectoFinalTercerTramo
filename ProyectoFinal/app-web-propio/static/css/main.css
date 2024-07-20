@@ -1,0 +1,490 @@
+body {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;		
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: "GG";
+    src: url("../fonts/Glitch.otf")
+}
+
+@font-face {
+	font-family:"bolt";
+	src: url("../fonts/BoltFont1.otf")
+}
+
+@font-face {
+	font-family:"GoBold";
+	src: url("../fonts/Gobold-Bold.otf")
+}
+
+.Font0 {
+	height: 40px;
+	font-family: "GG";
+	font-size: 50px;
+}
+
+.Font2 {
+	font-family: "bolt";
+}
+
+.Font3 {
+	font-family: "GoBold";
+	
+}
+
+.Font4 {
+	font-family: "bolt";
+	color: black;	
+}
+
+.Font5 {
+	font-family: "bolt";
+	color: white;	
+}
+
+
+.Contenedor1 {
+	background-color: black;
+	background-image: url(../Img/SPACE2.gif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: center;
+	height: 120px;
+	
+}
+
+.Titulo {
+	height: 100px;
+	width: 300px;
+	position: relative;
+	left: 15px;
+	top: 20px;
+	color: white;
+		
+}
+
+.SEC1 {
+	position: relative;
+	left: 360px;
+	bottom: 32px;
+	width: 55px;	
+}
+
+.SEC2 {
+	position: relative;
+	left: 450px;
+	bottom: 64px;
+	width: 62px;	
+}
+
+.color1 {
+	color: white;
+	transition: color 0.5s
+	ease-in-out, 
+	transform 0.5s
+	ease-in-out;
+	font-family: "bolt";
+	
+	
+}
+
+.color1:hover {
+	color: #DBDBDB;
+	transform: scale(1.2);
+
+}
+
+.color2 {
+	color: black;
+	transition: color 0.5s
+	ease-in-out, 
+	transform 0.5s
+	ease-in-out;
+	font-family: "GoBold";
+	
+	
+}
+
+.color2:hover {
+	color: #424242;
+	transform: scale(1.1);
+
+}
+
+.color3 {
+	color: white;
+	transition: color 0.5s
+	ease-in-out, 
+	transform 0.5s
+	ease-in-out;
+	font-family: "GoBold";	
+}
+
+.color3:hover {
+	color: #DBDBDB;
+	transform: scale(1.1);
+
+}
+
+.EntrarButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	height: 40px;
+	padding-top: 5px;
+	width: 100px;
+    border-radius: 10px;
+	position: relative;
+	left: 970px;
+	bottom: 120px;
+	transition: transform 0.5s
+	             ease-in-out;	
+}
+
+.EntrarButton:hover {
+	transform: scale(1.1);	
+}
+
+
+.TrueRegisterButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	height: 40px;
+	padding-top: 5px;
+	width: 110px;
+    border-radius: 10px;
+	position: relative;
+	left: 1100px;
+	bottom: 160px;
+	transition: transform 0.5s
+	             ease-in-out;	
+}
+
+.TrueRegisterButton:hover {
+	transform: scale(1.1);	
+}
+
+
+
+
+
+
+/* ==================================================================================================================================== */
+
+.Header1 {
+    font-family:"GoBold";
+	margin: 20px;
+}
+
+.BOX1 {
+	background-color: #DDDDDD;
+	height: 350px;
+	
+}
+
+.BoxContent {
+	display: flex;
+	padding: 20px;
+	gap: 140px;	
+}
+
+.LinkContainer {
+	display: flex;
+	gap: 140px;
+	padding-left: 20px;
+}
+
+.Categorias {
+    width: 160px;
+	position: relative;
+	
+}
+
+.Areas {
+    width: 160px;
+	position: relative;
+	right: 40px;
+}
+
+.Listas {
+    width: 160px;
+	position: relative;
+    right: 140px;	
+}
+
+
+
+.Footer {
+	background-color: black;
+	height: 250px;
+	margin-top: 60px;
+	
+}
+
+.FooterTitles {
+	display: flex;
+    font-family:"GoBold";
+	color: white;
+	padding: 20px;	
+	gap: 250px;
+	
+}
+
+.LinkContainer2 {
+	display: flex;
+	gap: 140px;
+	padding-left: 20px;	
+}
+
+.Secciones {
+	/* No quites esto.
+	Por alguna razon se rompe.*/
+}
+
+.Info {
+	position: relative;
+	left: 140px;
+}
+
+.Conecta {
+	background-color: white;
+	padding: 15px;
+	display: flex;
+	align-items: center;;
+	gap: 20px;
+	height: 75px;
+    border-radius: 20px;
+	position: relative;
+	left: 180px;
+	
+}
+
+.ImgSize {
+	width: 50px;
+	height: 50px;
+}
+
+.ButtonAnimation {
+	transition: transform 0.5s
+	             ease-in-out;
+}
+
+.ButtonAnimation:hover {
+	transform: scale(1.1);	
+}
+
+
+
+/* ==================================================================================================================================== */
+
+/* SECCION HOME: */
+
+.IntroBKG {			
+	background-image: linear-gradient(to right, #200049, #97DCFF);
+	height: 400px;
+	display: flex;
+
+}
+
+.IntroContent {
+	font-family: "bolt";
+	color: white;
+	display: flex;
+	height: 250px;
+	width: 350px;
+	font-size: 50px;
+	position: relative;
+    left: 30px;
+    top: 30px;		
+}
+
+.ButtonRegister {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	padding: 20px;
+	height: 60px;
+    border-radius: 10px;
+	position: relative;
+	top: 300px;
+	right: 290px;
+	transition: transform 0.5s
+	             ease-in-out;	
+}
+
+.ButtonRegister:hover {
+	transform: scale(1.1);		
+}
+
+.IntroIMG {
+	height: 400px;
+	width: 400px;
+}
+
+
+.Promocion {
+	display: flex;
+	justify-content: center;
+}
+
+.PotreroBOX {
+	background-color: black;
+	width: 200px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	margin-bottom: 30px;	
+}
+
+.PotreroIMG {
+	width: 120px;
+	height: 70px;
+}
+
+.PromoHeader {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+
+.ApiCards {
+
+}
+
+/* ==================================================================================================================================== */
+/* ESTILOS DE LAS CARDS API */
+
+	  .card-deck {
+	    margin: 20px;
+		display: grid;
+		gap: 2rem;
+	    grid-template-columns: 1fr 1fr 1fr 1fr;
+	  }
+	  
+	  @media (max-width: 900px) {
+	    .card-deck {
+	    grid-template-columns: 1fr 1fr 1fr;
+	    }	    	  
+	  }
+	  	  
+	  
+	  .card {
+	    background-color: #262526;
+		color: fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #000;	
+	  }
+	  
+	  
+	  
+	  .card-name {
+        font-size: 24px;
+        font-weight: bold;	  
+	  }
+	  
+	  .card-text {
+	     font-size: 18px;
+	  }
+	  
+/* ==================================================================================================================================== */	  
+
+.ButtonCursosBOX {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	
+}
+
+.ButtonMasCursos {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px;
+	color: white;
+	border-radius: 12px;
+	height: 50px;
+	width: 300px;	
+	transition: transform 0.5s
+	             ease-in-out;		
+}
+
+.ButtonMasCursos:hover {
+	transform: scale(1.1);		
+}
+
+
+.VentajasHeader {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	margin-top: 50px;
+}
+
+.VentajasBOX {
+	background-color: black;
+	background-image: url(../Img/SPACE2.gif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: center;
+	
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+
+}
+
+.RowBOX {
+	position: relative;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.VText  {
+	width: 500px;
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    color: white;	
+}
+
+
+
+
+
+/* ==================================================================================================================================== */
+
+/* SECCION DE ABOUT: */
+
+.SEC-CURSOS {
+	padding-top: 50px;
+	padding-bottom: 60px;
+	
+}
+
+.TituloCursos {
+	display: flex;
+	justify-content: center;
+	font-family: "GG";
+	padding: 15px;
+}
+
+
