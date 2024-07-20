@@ -1,0 +1,82 @@
+body {	
+    background-image: url(../Img/B&W-SPACE.gif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+
+.CenterALL {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    	
+}
+
+
+@font-face {
+	font-family: "GG";
+    src: url("../fonts/Glitch.otf")
+}
+
+@font-face {
+	font-family:"bolt";
+	src: url("../fonts/BoltFont1.otf")
+}
+
+.fontcustom1 {
+	font-family: "bolt";
+}
+
+.contenedorPadre {
+	background: rgba(0, 0, 0, 0.5);
+	width: 400px;
+	height: 500px;
+	border-radius: 10px;	
+	margin: 50px	
+
+}
+
+.Titulo {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	font-family: "GG";	
+	height: 45px;
+	color: white;
+}
+
+.subtitulo {
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-family: "bolt";
+}
+
+.FontContenedor {
+	color: white;
+	display: flex;
+	justify-content: center;
+	margin: 20px;	
+}
+
+.button1 {
+	display: flex;
+	justify-content: center;
+	font-family: "bolt";	
+}
+
+input {
+	outline: none;
+	border: 0;
+	border-radius: 6px;
+
+}
+
+.BackAnimation {
+	width: 200px;
+	height: 200px;
+	background: #aaa;
+	animation-name: TEST1;
+	animation-duration: 5s;
+}

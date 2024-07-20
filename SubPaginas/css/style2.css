@@ -1,0 +1,64 @@
+body {
+	background-image: url(../Img/SPACE6.gif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;	
+}
+
+@font-face {
+	font-family: "GG";
+    src: url("../fonts/Glitch.otf")
+}
+
+@font-face {
+	font-family:"bolt";
+	src: url("../fonts/BoltFont1.otf")
+}
+
+.CenterAll {
+	display: flex;
+	justify-content: center;
+}
+
+.Contenedor {
+	background: rgba(0, 0, 0, 0.5);
+	height: 500px;
+	width: 400px;
+	margin: 50px;
+	border-radius: 10px;
+}
+
+.Encabezado {
+	display: flex;
+	justify-content: center;
+	font-family: "GG";
+    margin-top: 30px;
+	color: white;
+}
+
+.Titulo {
+	display: flex;
+	justify-content: center;
+	font-family: "GG";	
+	color: white;
+}
+
+.FontContainer {
+	font-family: "bolt";
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	color: white;
+}
+
+.buttonCenter {
+	display: flex;
+	justify-content: center;
+}
+
+input {
+	outline: none;
+	border: 0;
+	border-radius: 6px;
+

@@ -1,0 +1,102 @@
+body {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../Img/SPACE2.gif);	
+}
+
+a {
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: "GG";
+    src: url("../fonts/Glitch.otf")
+}
+
+@font-face {
+	font-family:"bolt";
+	src: url("../fonts/BoltFont1.otf")
+}
+
+@font-face {
+	font-family:"GoBold";
+	src: url("../fonts/Gobold-Bold.otf")
+}
+
+
+.HeaderContainer {
+	display: flex;
+	justify-content: center;
+	/* Seh este es el proposito de este div*/
+}
+
+.HeaderDiv {
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+	font-family: "GG";
+	
+}
+
+.ButtonContainer {
+	display: flex;
+	justify-content: center;
+	font-family:"bolt";
+}
+
+.btn {
+	transition: transform 0.5s
+	             ease-in-out;
+}
+
+.btn:hover {
+	transform: scale(1.1);	
+}
+
+
+.RealContainer {
+	background-color: white;
+	width: 610px;
+	padding-top: 150px;
+	padding-bottom: 100px;
+	position: relative;
+	bottom: 150px;
+	z-index: -10;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+
+.CursoHeader {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	font-family:"GoBold";
+	
+}
+
+.ImageCenter {
+	display: flex;
+	justify-content: center;	
+}
+
+.ImgSIZE {
+    max-width: 350px;
+    height: auto;
+	border-radius: 20px;
+	
+}
+
+.TextBox1 {
+	width: 550px;
+	display: flex;
+	font-family:"GoBold";
+}
+
+.CenterText {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+}
+
